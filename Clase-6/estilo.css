@@ -1,0 +1,9 @@
+/* 
+especificidad: 
+    Id>Clases>Elementos>SelectorUniversal
+
+nombramiento:
+    selector universal --> *{ 
+    selector elemento --> elemento{
+    selector clase --> .clase{
+    selector id --> #id{
