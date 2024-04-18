@@ -1,0 +1,31 @@
+/* www.cssgenerator.org */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    color: rgb(255, 149, 237); /* color letras */
+    font-size: 45px; /* tamaño */
+    letter-spacing: 2px ; /* espaciar letras */
+    word-spacing: 5px ; /* espaciar palabras */
+    text-decoration: underline red dashed; /* underline (subrayado), overline, line-through (tachar) */
+    text-shadow: 20px 0px 3px black, 25px 0px 3px rgb(219, 22, 177) ; /* eje x: / eje y / valor_difuminado / color */
+    background-color: aquamarine;
+    /* ancho width: 400px; 
+       alto  height: 100px; alto */
+    text-align: center;
+}
+
+p{
+    font-size: x-large;
+}
+
+.parrafo{
+    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 15px;
+}
