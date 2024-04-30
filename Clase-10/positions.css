@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    width: 100vw;
+    height: 250vh;
+    background-color: rgb(231, 212, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 250px;
+    position: relative; /* se usa para q la position absolute del hijo quede dentro del padre */
+}
+
+.hijo{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.hijo:nth-child(1){
+    background-color: rgb(154, 64, 238);
+}
+
+.hijo:nth-child(2){
+    background-color: rgb(136, 194, 202);
+/*  position: static / relative (relativo a su posicion original) / absolute (cuenta desde el 0,0 del html en si; se olvida del padre; hay ponerle position al padre) / fixed (esta en el 0,0 de la pagina y queda estatico cuando scrolleas, superpuesto a la pagina) / sticky (empieza en su posicion horizontal y despues cuando scrolleas queda superpuesto en la pagina */
+    position: sticky ;
+/*  top/bottom/left/right: 20px; FUNCIONAN COMO MARGEN, no funciona con position static*/
+    left: 200px;
+    top:10px;
+    z-index: 1 ; /* posicion en el eje z, superposiciones  */
+}
+
+.hijo:nth-child(3){
+    background-color: yellow;
+    z-index: 2 ; /* posicion en el eje z */
+}
+
+.buscador-contenedor{
+    position: relative;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.buscador-contenedor input{
+    width: 100%;
+}
+
+.buscador-contenedor .lupita{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+}
