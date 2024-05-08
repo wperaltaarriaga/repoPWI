@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.historias .tarjetas{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    gap: 20px;
+}
+
+.historias .tarjetas .cliente{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
